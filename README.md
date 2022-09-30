@@ -15,3 +15,7 @@ Example: `docker run -p 7513:7513/tcp -p 9092:9092/tcp yourcooltagname`
 ## What the heck is Spacemesh?
 
 Spacemesh is a Proof of Space-Time crypto project. Read more here: https://spacemesh.io/
+
+## OMG I found a problem!
+
+Okay. Open an issue and explain it, I'll get to it when I can.
