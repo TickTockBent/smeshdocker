@@ -2,7 +2,7 @@
 
 This is a linux docker container I threw together quickly in order to run a spacemesh node. It's quick and dirty and works at the time of writing this. I make no promises it will continue to work, and I do not offer any support for it if it doesn't work. Use at your own risk.
 
-## How do I use it?`
+## How do I use it?
 
 Clone the repo to your local machine and build the docker container. 
 Example: `docker build . -t yourcooltagname`
