@@ -34,4 +34,5 @@ COPY --from=build_base /spacemesh/* ./
 # Start the node
 # TODO: Decouple the node data so it persists? Need to figure out where the node identity and POST data lives to test this.
 # Note: This will run but you need to expose port 7513 and 9092. Example run command: `docker run -p 7513:7513/tcp -p 9092:9092/tcp`
-ENTRYPOINT [ "/bin/bash", "-c", "/spacemesh/go-spacemesh --config /spacemesh/config.json -d /spacemesh/smeshdata" ]
+# Note: I have put my own rewards address here for convenience during testing, put yours in to use your own wallet or configure it while it's running with smrepl
+ENTRYPOINT [ "/bin/bash", "-c", "/spacemesh/go-spacemesh --config /spacemesh/config.json -d /home/smdata --smeshing-coinbase 0x455d27931Bc389F8B871ebCfE8C14397b4b61eeD --smeshing-opts-numunits 4 --smeshing-opts-datadir /home/smdata --smeshing-start"]
